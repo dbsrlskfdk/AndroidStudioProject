@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibZoomin"
+            android:src="@drawable/btn_plus_default"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibZoomout"
+            android:src="@drawable/btn_minus_default"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibRotate"
+            android:src="@drawable/ic_menu_rotate"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibBright"
+            android:src="@drawable/brighter"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibDark"
+            android:src="@drawable/darker"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pictureLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

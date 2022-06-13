@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+<!--
+    &lt;!&ndash; raw Folder 파일 처리&ndash;&gt;
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRead"
+        android:text="/res/raw에서 파일 읽기" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtRaw"
+        android:lines="10"/>
+-->
+<!--
+    &lt;!&ndash; SD카드에서 파일 읽기 &ndash;&gt;
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRead"
+        android:text="SD카드에서 파일 읽기" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSD"
+        android:lines="10" />
+-->
+    <!--
+    &lt;!&ndash; SD 카드에 폴더 및 파일 생성 &ndash;&gt;
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMkdir"
+        android:text="SD 카드에 디렉터리 생성"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRmDir"
+        android:text="SD 카드에 디렉터리 삭제"/>
+    -->
+
+    <!-- 특정 폴더의 하위 폴더 및 파일 목록 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFilelist"
+        android:text="시스템 폴더의 폴더/파일 목록"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtFilelist" />
+</LinearLayout>

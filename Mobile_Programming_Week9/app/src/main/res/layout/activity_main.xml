@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style='?android:attr/progressBarStyleHorizontal'
+        android:max='100'
+        android:progress='20'
+        android:secondaryProgress='50'/>
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="20"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="1.5"
+        android:stepSize="0.5"/>
+-->
+
+<!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼2"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼3"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼4"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼5"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼6"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼7"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="버튼8"/>
+        </LinearLayout>
+    </ScrollView>
+-->
+<!--
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="여기는 서랍 밖입니다."/>
+
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:handle="@+id/handle">
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서랍 손잡이" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FF00"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여기는 서랍 안입니다." />
+        </LinearLayout>
+    </SlidingDrawer>
+-->
+<!--
+    &lt;!&ndash;기본적인 ViewFlipper&ndash;&gt;
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이전화면"/>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="다음화면"/>
+    </LinearLayout>
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layout 1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff00"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layout2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layout 3"/>
+        </LinearLayout>
+    </ViewFlipper>
+
+-->
+    <!-- 직접풀어보기 6-2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진보기 시작"/>
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진보기 정지"/>
+    </LinearLayout>
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dog"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cat"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/giraffe"/>
+    </ViewFlipper>
+
+
+
+</LinearLayout>
